@@ -202,8 +202,10 @@ static MouseShortcut mshortcuts[] = {
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              XK_NO_MOD,      kscrollup,      {.i =  1} },
-	{ Button5,              XK_NO_MOD,      kscrolldown,    {.i =  1} },
+	{ Button4,              XK_NO_MOD,      kscrollup,      {.i =  3} },
+	{ Button5,              XK_NO_MOD,      kscrolldown,    {.i =  3} },
+	{ Button4,              ShiftMask,      kscrollup,      {.i =  6} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i =  6} },
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
