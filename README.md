@@ -1,19 +1,19 @@
-# Luke's build of st - the simple (suckless) terminal
+# st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
 ## Unique features (using dmenu)
 
-+ **follow urls** by pressing `alt-l`
-+ **copy urls** in the same way with `alt-y`
-+ **copy the output of commands** with `alt-o`
++ **follow urls** by pressing `ctrl-u`
++ **copy urls** in the same way with `ctrl-y`
++ **copy the output of commands** with `ctrl-o`
 
 ## Bindings for
 
-+ **scrollback** with `alt-↑/↓` or `alt-pageup/down` or just scrolling the mouse
-+ OR **vim-bindings**: scroll up/down in history with `alt-k` and `alt-j`. Faster with `alt-u`/`alt-d`.
-+ **zoom/change font size**: same bindings as above, but holding down shift as well. `alt-home` returns to default
-+ **copy text** with `alt-c`, **paste** is `alt-v` or `shift-insert`
++ **scrollback** with `ctrl-↑/↓` or `ctrl-pageup/down` or just scrolling the mouse
++ OR: scroll up/down in history with `ctrl-l` and `ctrl-k`. Faster with `ctrl-shift-l`/`ctrl-shift-k`.
++ **zoom/change font size**: zoom in/out ctrl-shift-i ctrl-shift-o. `ctrl-home` returns to default
++ **copy text** with `ctrl-shift-c`, **paste** is `ctrl-shift-v` or `shift-insert`
 
 ## Pretty stuff
 
@@ -31,12 +31,10 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 ## Installation for newbs
 
 ```
-git clone https://github.com/LukeSmithxyz/st
+git clone https://github.com/tesq0/st
 cd st
 sudo make install
 ```
-
-Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
 
 Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font.  It might be obvious, but `libX11` and `libXft` are required as well. Chances are, you have all of this installed already.
 
@@ -68,8 +66,3 @@ To be clear about the color settings:
 - But if `wal` has run in your session, its colors will take priority.
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)

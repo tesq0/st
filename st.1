@@ -1,6 +1,6 @@
 .TH ST 1 st\-VERSION
 .SH NAME
-st \- simple terminal (Luke Smith (https://lukesmith.xyz)'s build)
+st \- simple terminal
 .SH SYNOPSIS
 .B st
 .RB [ \-aiv ]
@@ -125,34 +125,34 @@ and all the remaining arguments are used as a command
 even without it.
 .SH SHORTCUTS
 .TP
-.B Alt-j/k or Alt-Up/Down or Alt-Mouse Wheel
-Scroll up/down one line at a time.
+.B Ctrl-l/k or Ctrl-Up/Down or Mouse Wheel
+Scroll up/down 2 lines at a time.
 .TP
-.B Alt-u/d or Alt-Page Up/Page Down
-Scroll up/down one screen at a time.
+.B Ctrl-Shift-l/k or Ctrl-Page Up/Page Down
+Scroll up/down 4 lines at a time.
 .TP
-.B Alt-Shift-k/j or Alt-Shift-Page Up/Page Down or Alt-Shift-Mouse Wheel
+.B Ctrl-Shift-i/o or Ctrl-Shift-Page Up/Page Down or Ctrl-Shift-Mouse Wheel
 Increase or decrease font size.
 .TP
-.B Alt-Home
+.B Ctrl-Home
 Reset to default font size.
 .TP
-.B Shift-Insert or Alt-v
+.B Shift-Insert or Ctrl-Shift-v
 Paste from clipboard.
 .TP
-.B Alt-c
+.B Ctrl-Shift-c
 Copy to clipboard.
 .TP
-.B Alt-p
+.B Ctrl-Shift-p
 Paste/input primary selection.
 .TP
-.B Alt-l
+.B Ctrl-u
 Show dmenu menu of all URLs on screen and choose one to open.
 .TP
-.B Alt-y
+.B Ctrl-y
 Show dmenu menu of all URLs on screen and choose one to copy.
 .TP
-.B Alt-o
+.B Ctrl-o
 Show dmenu menu of all recently run commands and copy the output of the chosen command to the clipboard.
 .I xclip
 required.
@@ -172,11 +172,11 @@ Print the full screen to the
 .TP
 .B Print Screen
 Print the selection to the
-.I iofile.
-.TP
-.B Alt-Ctrl
-Launch dmenu to enter a unicode codepoint and send the corresponding glyph
-to st.
+\" .I iofile.
+\" .TP
+\" .B Alt-Ctrl
+\" Launch dmenu to enter a unicode codepoint and send the corresponding glyph
+\" to st.
 .SH CUSTOMIZATION
 .B st
 can be customized by creating a custom config.h and (re)compiling the source
